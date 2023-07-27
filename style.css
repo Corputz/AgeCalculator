@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    background: hsl(0, 0%, 86%);
+}
+
+main {
+    background: hsl(0, 0%, 100%);
+    width: 93%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    margin-top: 5rem;
+    border-radius: 25px 25px 100px 25px;
+}
+
+#inputs {
+    display: flex;
+    gap: 1rem;
+}
+
+label {
+    display: block;
+    color: hsl(0, 1%, 44%);
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+input {
+    font-size: 22px;
+    font-weight: bold;
+    width: 90px;
+    padding: 0.6rem 0.8rem;
+    border-radius: 10px;
+    border: 2px solid hsl(0, 0%, 94%);
+}
+
+input:focus {
+    border: 2px solid rgba(0, 0, 0, 0) !important;
+    outline: 2px solid hsl(259, 100%, 65%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#submit {
+    position: relative;
+    height: 50px;
+    padding: 2.5rem 0;
+    width: 100%;
+}
+
+button {
+    position: absolute;
+    top: calc(50% - 28px);
+    left: calc(50% - 28px);
+    background: hsl(259, 100%, 65%);
+    border: none;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+}
+
+button img {
+    width: 32px;
+    height: 32px;
+    padding-top: 0.2rem;
+}
+
+button:active {
+    background: hsl(0, 0%, 8%);
+}
+
+hr {
+    border: 1px solid hsl(0, 0%, 94%);
+}
+
+#results {
+    padding-top: 1rem;
+}
+
+#results p {
+    font-size: 3.3rem;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 3.5rem;
+}
+
+.output {
+    color: hsl(259, 100%, 65%);
+}
+
+.error {
+    font-size: 0.8rem;
+    color: hsl(0, 100%, 67%);
+    text-align: center;
+    padding: 0.2rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        padding: 3rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    input {
+        width: 120px;
+        font-size: 32px;
+    }
+
+    button {
+        top: calc(50% - 32px);
+        left: calc(100% - 3rem);
+        width: 64px;
+        height: 64px;
+    }
+
+    #results p {
+        font-size: 4.3rem;
+        line-height: 5rem;
+    }
+}
