@@ -1,6 +1,3 @@
-import moment from './node_modules/moment/dist/moment.js';
-moment().format();
-
 const form = document.getElementById('date_fm');
 
 const dayErr = document.getElementById('dayErr');
@@ -13,8 +10,6 @@ const yearOutput = document.getElementById('year');
 
 function validate(e) {
     e.preventDefault();
-	e.stopPropagation();
-	e.stopImmediatePropagation();
     const now = new Date();
     const year = form.year.value;
     const month = form.month.value;
@@ -100,8 +95,7 @@ function validate(e) {
         }
     }
 
-	return false;
-
+    return false;
 }
 
 function showAge(bday, now) {
