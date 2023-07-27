@@ -144,4 +144,4 @@ function showAge(bday, now) {
     }, 50);
 }
 
-form.addEventListener('submit', validate);
+form.addEventListener('submit', validate(event));
