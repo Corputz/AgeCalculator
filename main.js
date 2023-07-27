@@ -13,7 +13,6 @@ const yearOutput = document.getElementById('year');
 
 function validate(e) {
     e.preventDefault();
-	e.stopPropagation();
     const now = new Date();
     const year = form.year.value;
     const month = form.month.value;
@@ -98,6 +97,8 @@ function validate(e) {
             dayOutput.innerHTML = '--';
         }
     }
+
+	return false;
 
 }
 
