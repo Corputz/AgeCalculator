@@ -14,6 +14,7 @@ const yearOutput = document.getElementById('year');
 function validate(e) {
     e.preventDefault();
 	e.stopPropagation();
+	e.stopImmediatePropagation();
     const now = new Date();
     const year = form.year.value;
     const month = form.month.value;
