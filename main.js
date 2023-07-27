@@ -1,3 +1,5 @@
+moment().format();
+
 const form = document.getElementById('date_fm');
 
 const dayErr = document.getElementById('dayErr');
@@ -109,8 +111,6 @@ function showAge(bday, now) {
     b.add(months, 'months');
 
     const days = a.diff(b, 'days');
-
-    console.log(years);
 
     yearOutput.innerHTML = 0;
     monthOutput.innerHTML = 0;
